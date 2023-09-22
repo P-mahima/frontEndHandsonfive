@@ -1,38 +1,117 @@
-.App {
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Kanit", sans-serif; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  position: relative;
+  top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-left: 230px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Display{
+  width: 50%;
+  height: 450px;
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/03/36/67/27/1000_F_336672777_wgO2LVwsIohQkj7QHwJKknPKgdARK3q6.jpg"); */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKqX0VxLNFT93I2CK3i58ADZUgGeCFK8k_R145HsE13xbWG1KnLZKWW9iY6BXnop8gdhs&usqp=CAU");
+  border: 1px solid black;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  top: 60px;
+}
+
+.SentMSG {
+  background-color: rgb(115, 204, 220);
+  box-sizing: border-box;
+  color: black;
+  /* border-radius: 30px; */
+  padding: 13px;
+  margin-top: 20px;
+  border-top-left-radius: 30px;
+  /* border-bottom-left-radius: 30px; */
+  border-top-right-radius: 30px;
+  width: 250px;
+  position: relative;
+  left: 100%;
+}
+.head{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.image{
+  width: 60px;
+}
+
+.receivedMSG {
+  box-sizing: border-box;
+  background-color: rgb(184, 47, 147);
+  /* border-radius: 30px; */
+  padding: 13px;
+  margin-top: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* border-top-right-radius: 30px; */
+  width: 250px;
+  position: relative;
+  right: 100%;
+}
+
+.TextField{
+  width: 300px;
+  height: 40px;
+  border:  3px solid black;
+  border-radius: 20px;
+  margin-left: 220px;
+  font-size: 20px;
+  position: relative;
+  bottom: 440px;
+  right: 13%;
+  background-color: #319e9c63;
+}
+.SendInput{
+  font-size: 20px;
+  width: 80%;
+  height: 5vh;
   color: white;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJspehI647KHAikSJ9NN7p1tu6ZJwmdELECno9TvmMaUlGw7-Efg0TSKRMFFZ7cNTKiBk&usqp=CAU');
+}
+.sendMsg{
+  font-size: 20px;
+  width: 90%;
+  height: 4vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  margin-top: 10px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sendButton{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
+
