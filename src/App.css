@@ -47,7 +47,7 @@ h1 {
   border-top-left-radius: 30px;
   /* border-bottom-left-radius: 30px; */
   border-top-right-radius: 30px;
-  width: 250px;
+  width: 120px;
   position: relative;
   left: 100%;
 }
@@ -71,7 +71,7 @@ h1 {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   /* border-top-right-radius: 30px; */
-  width: 250px;
+  width: 120px;
   position: relative;
   right: 100%;
 }
